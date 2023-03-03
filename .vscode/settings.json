@@ -1,6 +1,4 @@
 {
-
-    "jupyter.sendSelectionToInteractiveWindow": true,
     "python.formatting.provider": "black",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
@@ -32,4 +30,5 @@
     "git.openRepositoryInParentFolders": "never",
     "jupyter.askForKernelRestart": false,
     "python.analysis.typeCheckingMode": "basic",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
 }
