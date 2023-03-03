@@ -1,0 +1,8 @@
+version: "3.11"
+services:
+  app :
+    build:
+      context: ./
+      dockerfile: ./app/dockerfile
+  db:
+    build: ./database/

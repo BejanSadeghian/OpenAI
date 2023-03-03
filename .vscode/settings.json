@@ -1,0 +1,35 @@
+{
+
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
+    },
+    "python.languageServer": "Pylance",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.banditEnabled": true,
+    "pylint.args": [
+        "max-line-length=88"
+    ],
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers",
+        "--extension-pkg-whitelist=all",
+        "--disable=all",
+        "--disable=undefined-variable",
+    ],
+    "autoDocstring.docstringFormat": "google-notypes",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "thunder-client.saveToWorkspace": true,
+    "git.openRepositoryInParentFolders": "never",
+    "jupyter.askForKernelRestart": false,
+    "python.analysis.typeCheckingMode": "basic",
+}

@@ -1,0 +1,28 @@
+[tool.black]
+target_version = ['py39','py310','py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+
+    # The following are specific to Black, you probably don't want those.
+    | blib2to3
+    | tests/data
+)/
+'''
+
+[tool.bandit]
+exclude_dirs = ["app/tests","docs"]
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 88
+disable = "R0913, C0114, W1203, W0707, R0903, E0401, R0801, R0914, R0915"
+good-names = "db, i, j, k, e, ex, Run, _, x"
